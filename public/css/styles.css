@@ -1,0 +1,646 @@
+
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.form-control, .btn {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+.form-control:focus {
+    border-color: #009688;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.6);
+}
+
+.btn-primary {
+    background-color: #009688;
+    border-color: #00796b;
+}
+
+.btn-primary:hover {
+    background-color: #00796b;
+    border-color: #00695c;
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    color: #e0e0e0;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table-success {
+    background-color: #2e7d32 !important;
+    color: #fff;
+}
+
+.alert-success {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+}
+
+.text-center-login {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.modern-border {
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Borda clara e suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    padding: 20px; /* Espaço interno */
+    background-color: rgba(30, 30, 30, 0.9); /* Fundo levemente transparente */
+}
+
+.btn-dark-modern {
+    background-color: #222; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda clara e suave */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.btn-dark-modern:hover {
+    background-color: #444; /* Fundo mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+    border-color: rgba(255, 255, 255, 0.5); /* Borda mais clara ao passar o mouse */
+}
+.btn-dark-modern:focus {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Sombra ao focar */
+}
+
+.btn-dark-modern-small {
+    background-color: #222; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda clara e suave */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 8px 16px; /* Espaçamento interno menor */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.btn-dark-modern-small:hover {
+    background-color: #444; /* Fundo mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+    border-color: rgba(255, 255, 255, 0.5); /* Borda mais clara ao passar o mouse */
+}
+
+.btn-dark-modern-small:focus {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Sombra ao focar */
+}
+
+/* Aplicar o estilo apenas para a página de login */
+#login-page {
+    background-color: #121212; /* Fundo escuro */
+    font-family: 'Arial', sans-serif; /* Fonte limpa e moderna */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#login-page .login-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+#login-page .login-form {
+    text-align: center;
+}
+
+#login-page .login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* Azul escuro */
+}
+
+/* Estilo para os inputs */
+#login-page .input-group {
+    margin-bottom: 20px;
+}
+
+#login-page .input-group label {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-page .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background-color: #252525;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#login-page .input-group input:focus {
+    border-color: #4e6e89;
+    outline: none;
+    box-shadow: 0 0 10px rgba(78, 110, 137, 0.6);
+}
+
+/* Estilo para mensagens de erro */
+#login-page .error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Estilo para o checkbox */
+#login-page .form-check {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#login-page .form-check label {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Estilo para os botões */
+#login-page .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e6e89;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-page .btn-login:hover {
+    background-color: #2e4b5b; /* Azul escuro quando passa o mouse */
+    transform: scale(1.05);
+}
+
+/* Estilo para o link de recuperação de senha */
+#login-page .btn-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#login-page .btn-link:hover {
+    color: #4e6e89; /* Azul escuro */
+}
+
+/* Estilo para as ações finais (botão e link) */
+#login-page .form-actions {
+    margin-top: 20px;
+}
+
+/* Estilo específico para a borda e sombra do formulário */
+#login-page .modern-border {
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Borda clara e suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    padding: 20px; /* Espaço interno */
+    background-color: rgba(30, 30, 30, 0.9); /* Fundo levemente transparente */
+}
+
+#login-page .btn-dark-modern {
+    background-color: #222; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda clara e suave */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+#login-page .btn-dark-modern:hover {
+    background-color: #444; /* Fundo mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+    border-color: rgba(255, 255, 255, 0.5); /* Borda mais clara ao passar o mouse */
+}
+
+#login-page .btn-dark-modern:focus {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Sombra ao focar */
+}
+
+#login-page .btn-dark-modern-small {
+    background-color: #222; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda clara e suave */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 8px 16px; /* Espaçamento interno menor */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+#login-page .btn-dark-modern-small:hover {
+    background-color: #444; /* Fundo mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+    border-color: rgba(255, 255, 255, 0.5); /* Borda mais clara ao passar o mouse */
+}
+
+#login-page .btn-dark-modern-small:focus {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Sombra ao focar */
+}
+
+/* Aplicar o estilo apenas para a página de login e de registro */
+#login-page, #register-page {
+    background-color: #121212; /* Fundo escuro */
+    font-family: 'Arial', sans-serif; /* Fonte limpa e moderna */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#login-page .login-container, #register-page .register-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+#login-page .login-form, #register-page .register-form {
+    text-align: center;
+}
+
+#login-page .login-form h1, #register-page .register-form h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4e6e89; /* Azul escuro */
+}
+
+/* Estilo para os inputs */
+#login-page .input-group, #register-page .input-group {
+    margin-bottom: 20px;
+}
+
+#login-page .input-group label, #register-page .input-group label {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-page .input-group input, #register-page .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background-color: #252525;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#login-page .input-group input:focus, #register-page .input-group input:focus {
+    border-color: #4e6e89;
+    outline: none;
+    box-shadow: 0 0 10px rgba(78, 110, 137, 0.6);
+}
+
+/* Estilo para mensagens de erro */
+#login-page .error-message, #register-page .error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Estilo para os botões */
+#login-page .btn-login, #register-page .btn-register {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e6e89;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-page .btn-login:hover, #register-page .btn-register:hover {
+    background-color: #2e4b5b; /* Azul escuro quando passa o mouse */
+    transform: scale(1.05);
+}
+
+/* Estilo para o link de recuperação de senha */
+#login-page .btn-link, #register-page .btn-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#login-page .btn-link:hover, #register-page .btn-link:hover {
+    color: #4e6e89; /* Azul escuro */
+}
+
+/* Estilo para as ações finais (botão e link) */
+#login-page .form-actions, #register-page .form-actions {
+    margin-top: 20px;
+}
+
+/* Estilo específico para a borda e sombra do formulário */
+#login-page .modern-border, #register-page .modern-border {
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Borda clara e suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    padding: 20px; /* Espaço interno */
+    background-color: rgba(30, 30, 30, 0.9); /* Fundo levemente transparente */
+}
+
+/* Arquivo: public/css/style.css */
+
+/* Estilização específica para a tela de Home */
+.home-container {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4e6e89;
+}
+
+.home-container p {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.home-container .btn-primary, .home-container .btn-secondary {
+    background-color: #4e6e89;
+    border-color: #4e6e89;
+    color: #fff;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.home-container .btn-primary:hover, .home-container .btn-secondary:hover {
+    background-color: #2e4b5b;
+    border-color: #2e4b5b;
+    transform: scale(1.05);
+}
+
+.home-container .btn-primary:focus, .home-container .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(78, 110, 137, 0.6);
+}
+
+/* Arquivo: public/css/style.css */
+
+/* Estilos aplicados apenas à página home */
+.home-page {
+    background-color: #1f1f1f; /* Cor de fundo escuro */
+    color: #fff; /* Texto em branco */
+}
+
+/* Navbar - estilo escuro apenas na home */
+.home-page .navbar {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+}
+
+.home-page .navbar-brand {
+    color: #ff6b6b; /* Cor do nome da aplicação */
+    font-size: 1.5rem;
+}
+
+.home-page .navbar-nav .nav-link {
+    color: #fff; /* Cor dos links na barra de navegação */
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.home-page .navbar-nav .nav-link:hover {
+    color: #ff6b6b; /* Efeito de hover */
+}
+
+/* Estilo para os botões na tela home */
+.home-page button {
+    background-color: #4e6e89;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-page button:hover {
+    background-color: #2e4b5b;
+}
+
+/* Estilo para os links na tela home */
+.home-page a {
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.home-page a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização para os links da navbar apenas na home */
+.home-page .navbar-nav .nav-link.active {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Container do conteúdo */
+.home-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main content area */
+.home-page main {
+    margin-top: 50px;
+}
+
+
+/* styles.css */
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cartão de serviços */
+.card {
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Botões personalizados */
+.btn-dark-modern {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-dark-modern:hover {
+    background-color: #555;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+/* Tabela de serviços */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-success {
+    background-color: #d4edda;
+}
+
+.table th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Formularios de ações */
+form {
+    display: inline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .card-header {
+        font-size: 1.2em;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.9em;
+    }
+}
